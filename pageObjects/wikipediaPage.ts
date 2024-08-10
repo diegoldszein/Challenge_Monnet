@@ -13,9 +13,7 @@ export class WikipediaPage {
     await this.page.goto(`https://en.wikipedia.org/wiki/${pokemonName}`);
   }
 
-  // async getTitle(): Promise<string> {
-  //   return this.page.title();  
-  // }
+  
 
   async getTitle(): Promise<string> {
     try {
@@ -63,13 +61,13 @@ export class WikipediaPage {
         // Convierte la URL a una URL absoluta si es relativa
         const baseUrl = this.page.url();
         const absoluteImageUrl = new URL(imageUrl, baseUrl).toString();
-        console.log(`Descargando imagen desde: ${absoluteImageUrl}`); // Imprime la URL para depuración
+        console.log(`Descargando imagen desde: ${absoluteImageUrl}`); 
   
         const response = await this.page.goto(absoluteImageUrl);
         if (response && response.ok()) {
           const buffer = await response.body();
   
-          // Asegúrate de que el directorio exista antes de intentar guardar la imagen
+          
           const dir = path.dirname(imagePath);
           if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir, { recursive: true });
