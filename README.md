@@ -23,12 +23,17 @@ Este proyecto es un desafío de automatización que incluye pruebas de API y pru
 
 ## Instalación
 1. **Clona el repositorio:**
+   Opción 1
    ```bash
    git clone https://github.com/diegoldszein/Challenge_Monnet.git
    cd Monnet
    ```
+   Opción 2
+   Seguir los pasos de este video:
+   https://www.youtube.com/watch?v=ILJ4dfOL7zs
+   
 
-2. **Instala las dependencias:**
+3. **Instala las dependencias:**
    ```bash
    npm install
    ```
