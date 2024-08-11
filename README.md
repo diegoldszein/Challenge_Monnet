@@ -40,7 +40,7 @@ Este proyecto es un desafío de automatización que incluye pruebas de API y pru
 
 ## Configuración
 1. **Variables de Entorno:**
-   Colocar la clave en el archivo `.env` , copiar del ejemplo .env.example
+   Crear en la raiz un .env y colocar la clave, copiar del ejemplo .env.example
    
 
 ## Ejecución de Pruebas
@@ -77,7 +77,7 @@ npx playwright show-report
 ## Consideraciones
 - **Manejo de Clave Secreta:** La clave secreta se encripta de manera segura usando SHA-256 y se registra en formato encriptado antes de cada prueba.
 - **Manejo del Archivo Excel:** Las pruebas leen directamente desde el archivo Excel para evitar la duplicación de datos.
-- **Validaciones en Pruebas Web:** Las pruebas web validan el título de la página, registran el nombre del ilustrador y aseguran que las imágenes descargadas cumplan con los criterios especificados.
+- **Validaciones en Pruebas Web:** Las pruebas web validan el título de la página (deje que falle esta prueba dado que deberian estar en mayuscula los nombres en el archivo Excel o al menos no hay una aclaración al respecto en el challenge y tambien sirvió la falla para que el reporte muestre una captura de pantalla) , registran el nombre del ilustrador y aseguran que las imágenes descargadas cumplan con los criterios especificados.
 
 ## Estructura del Proyecto
 - `tests/`: Contiene todos los archivos de pruebas (API y web).
