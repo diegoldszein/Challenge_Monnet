@@ -8,4 +8,4 @@
 8. Mejora: hacer uso fixture para poder usar una baseUrl para la web y otra para API. Ver: [https://playwright.dev/docs/test-fixtures#fixtures-options](https://playwright.dev/docs/test-fixtures#fixtures-options). También, con el uso de fixture se podría eliminar código duplicado entre ambos archivos de test, como ser la lectura del excel y el console.log con el hash al principio, o bien el console log con la hora de finalización.
 9. Mejora: hacer uso de annotations [https://playwright.dev/docs/test-annotations#tag-tests](https://playwright.dev/docs/test-annotations#tag-tests).
 10. Mejora: se podría crear scripts en el `package.json`, por ejemplo, `"testWeb": "npx playwright test --grep web.spec.ts"`, entonces se podría hacer directamente `npm run testWeb` el cual es más corto y fácil de recordar.
-11. API: se está validando solamente por name en vez de tener un test con name y no por id.
+11. API: se está validando solamente por name en vez de tener un test con name y otro por id.
